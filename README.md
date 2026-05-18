@@ -22,7 +22,7 @@ IMDB-Movie-Rating-Predictions-Group-10/
 ```
 
 ## 📊 Dataset
-- **Source:** [IMDB Top 1000 Movies – Kaggle](https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows)
+- **Source:** [IMDB Top 1000 Movies – Kaggle](https://www.kaggle.com/datasets/thedevastator/imdb-movie-ratings-dataset)
 - **Features:** Genre, Runtime, IMDB Rating, No. of Votes, Gross Revenue, Director, Release Year
 - **Target variable:** `IMDB_Rating` (continuous, 1.0 – 10.0)
 
