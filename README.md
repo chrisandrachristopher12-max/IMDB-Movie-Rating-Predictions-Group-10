@@ -29,11 +29,11 @@ IMDB-Movie-Rating-Predictions-Group-10/
 ## ▶️ Milestone videos
 | Milestone | Topic | YouTube Link |
 |-----------|-------|--------------|
-| M1 | Data Pipeline | [add link] |
-| M2 | Architecture Logic | [add link] |
-| M3 | Training Loop | [add link] |
-| M4 | Model Optimization | [add link] |
-| M5 | Final Evaluation | [add link] |
+| M1 | Data Pipeline | [](https://youtu.be/NVMA_dkZF3Q) |
+| M2 | Architecture Logic | [](https://youtu.be/RrCvqTxPDC8) |
+| M3 | Training Loop | [](https://youtu.be/nr_Gt__fmdY)|
+| M4 | Model Optimization | [](https://youtu.be/f8io57OuWWw?si=Ti8FtYU5JyUYlx_c) |
+| M5 | Final Evaluation | [](https://youtu.be/7jstQpHVtwA) |
 
 ## ⚙️ How to run
 ```bash
