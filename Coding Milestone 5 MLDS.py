@@ -10,9 +10,8 @@ from sklearn.preprocessing import StandardScaler
 import warnings
 warnings.filterwarnings('ignore')
 
-# [YOUR DATA LOADING CODE - SAME AS BEFORE]
-path = r"C:\Users\hello\Downloads\milestone 1\cleaned_movie.csv"
-df = pd.read_csv(path)
+# Load dataset from the same folder as this script
+df = pd.read_csv("IMDB_Movie_Dataset.csv")
 
 # Find target (SAME)
 target_col = None
