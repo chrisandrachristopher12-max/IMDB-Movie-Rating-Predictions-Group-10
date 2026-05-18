@@ -48,5 +48,5 @@ Open the notebooks in order (01 → 05). Each notebook is self-contained for its
 | FARHANI SYAMSUDDIN BI23110050 | farhanisyamsuddin12 | M1 – Data Pipeline |
 | JULAIKA ANG BI23110160 | jul29-bit | M2 – Architecture Logic |
 | CHRISANDRA BUSAK CHRISTOPHER BI23110160 | chrisandrachirstopher12-max | M3 – Training Loop |
-| NABILA GOTIMUS | assyahidNabila | M? – [topic] |
+|  | assyahidNabila | M4 – Model Optimization |
 | NABILA GOTIMUS | assyahidNabila | M5 – Final Evaluation |
