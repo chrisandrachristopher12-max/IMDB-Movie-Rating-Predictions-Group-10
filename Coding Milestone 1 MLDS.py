@@ -24,7 +24,7 @@ print(df.info())
 print("\n=== CHECK MISSING VALUES ===")
 print(df.isnull().sum())
 
-# Histogram
+# For Histogram
 if 'IMDB_Rating' in df.columns:
     plt.figure()
     df['IMDB_Rating'].hist(bins=10)
