@@ -11,7 +11,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
 # 1. Load and prepare data
 
-df = pd.read_csv("cleaned_movie.csv")
+df = pd.read_csv("IMDB_Movie_Dataset.csv")
 
 # Convert and clean data
 df["Released_Year"] = pd.to_numeric(df["Released_Year"], errors="coerce")
