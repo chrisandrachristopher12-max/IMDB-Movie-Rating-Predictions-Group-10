@@ -49,4 +49,4 @@ Open the notebooks in order (01 → 05). Each notebook is self-contained for its
 | JULAIKA ANG BI23110160 | jul29-bit | M2 – Architecture Logic |
 | CHRISANDRA BUSAK CHRISTOPHER BI23110160 | chrisandrachirstopher12-max | M3 – Training Loop |
 | NORAIN AQILAH BINTI SHAMSUDDIN BI22110478 | aiinaqilah | M4 – Model Optimization |
-| NABILA GOTIMUS | assyahidNabila | M5 – Final Evaluation |
+| NABILA GOTIMUS BI23110288 | assyahidNabila | M5 – Final Evaluation |
