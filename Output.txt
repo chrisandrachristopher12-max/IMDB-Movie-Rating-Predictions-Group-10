@@ -1,0 +1,202 @@
+============================================================
+  IMDB MOVIE RATING PREDICTOR  —  Full Pipeline
+============================================================
+
+  Dataset : IMDB_Movie_Dataset.csv
+  Plots   : C:\Users\norai\OneDrive\Desktop\ML_group\plots/
+
+============================================================
+PHASE 1 : DATA PIPELINE
+============================================================
+
+[1/4] Loading dataset ...
+  Rows: 1000  |  Columns: 8
+
+  Preview (first 3 rows):
+  Released_Year Certificate  Runtime                 Genre  IMDB_Rating  Meta_score  No_of_Votes        Gross
+0          1994           A  142 min                 Drama          9.3        80.0      2343110   28341469.0
+1          1972           A  175 min          Crime, Drama          9.2       100.0      1620367  134966411.0
+2          2008          UA  152 min  Action, Crime, Drama          9.0        84.0      2303232  534858444.0
+
+[2/4] Exploratory Data Analysis ...
+
+  Data types:
+Released_Year     object
+Certificate       object
+Runtime           object
+Genre             object
+IMDB_Rating      float64
+Meta_score       float64
+No_of_Votes        int64
+Gross            float64
+
+  Missing values per column:
+Released_Year    0
+Certificate      0
+Runtime          0
+Genre            0
+IMDB_Rating      0
+Meta_score       0
+No_of_Votes      0
+Gross            0
+
+  Summary statistics:
+       IMDB_Rating   Meta_score   No_of_Votes         Gross
+count  1000.000000  1000.000000  1.000000e+03  1.000000e+03
+mean      7.949300    78.133000  2.736929e+05  6.051360e+07
+std       0.275491    11.368225  3.273727e+05  1.014192e+08
+min       7.600000    28.000000  2.508800e+04  1.305000e+03
+25%       7.700000    72.000000  5.552625e+04  5.012919e+06
+50%       7.900000    79.000000  1.385485e+05  2.353089e+07
+75%       8.100000    85.250000  3.741612e+05  6.153989e+07
+max       9.300000   100.000000  2.343110e+06  9.366622e+08
+
+[3/4] Plotting rating distribution ...
+  [saved -> plots/phase1_rating_distribution.png]
+
+[4/4] Generating correlation heatmap ...
+  [saved -> plots/phase1_correlation_heatmap.png]
+
+Phase 1 complete — dataset loaded and explored.
+
+============================================================
+PHASE 2 : ARCHITECTURE DEFINITION
+============================================================
+
+  Numeric features    : ['Released_Year', 'Runtime_min', 'Meta_score', 'No_of_Votes', 'Gross']
+  Categorical features: ['Certificate', 'Genre']
+  Target variable     : IMDB_Rating
+  Total input features: 7
+  Model               : GradientBoostingRegressor
+  Task type           : Regression — predict continuous rating 1.0 to 10.0
+
+  Baseline pipeline:
+    Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('num', StandardScaler(),
+                                                  ['Released_Year',
+                                                   'Runtime_min', 'Meta_score',
+                                                   'No_of_Votes', 'Gross']),
+                                                 ('cat',
+                                                  OneHotEncoder(handle_unknown='ignore',
+                                                                sparse_output=False),
+                                                  ['Certificate', 'Genre'])])),
+                ('model',
+                 GradientBoostingRegressor(learning_rate=0.05, n_estimators=300,
+                                           random_state=42))])
+
+Phase 2 complete — architecture defined.
+
+============================================================
+PHASE 3 : MODEL TRAINING
+============================================================
+
+[1/6] Preparing data ...
+  Shape after cleaning: (999, 9)
+
+[2/6] Splitting  70 / 15 / 15 ...
+  Train : 699  |  Val : 150  |  Test : 150
+
+[3/6] Fitting preprocessor on training data only ...
+  Processed train shape: (699, 193)
+
+[4/6] Sweeping boosting stages ...
+  n= 10  | Train RMSE 0.2313  | Val RMSE 0.2584  | Val R2 0.1473
+  n= 20  | Train RMSE 0.2064  | Val RMSE 0.2450  | Val R2 0.2335
+  n= 50  | Train RMSE 0.1706  | Val RMSE 0.2194  | Val R2 0.3856
+  n=100  | Train RMSE 0.1512  | Val RMSE 0.2115  | Val R2 0.4286
+  n=150  | Train RMSE 0.1398  | Val RMSE 0.2082  | Val R2 0.4463
+  n=200  | Train RMSE 0.1326  | Val RMSE 0.2068  | Val R2 0.4541
+  n=300  | Train RMSE 0.1222  | Val RMSE 0.2064  | Val R2 0.4562
+
+  Best boosting stages (lowest Val RMSE): 300
+  Best Validation RMSE : 0.2064
+  Best Validation R2   : 0.4562
+
+[5/6] Plotting training progress ...
+  [saved -> plots/phase3_training_progress.png]
+
+[6/6] Evaluating best baseline model on test set ...
+  Test RMSE : 0.1907
+  Test MAE  : 0.1477
+  Test R2   : 0.4701
+  [saved -> plots/phase3_actual_vs_predicted.png]
+
+Phase 3 complete — best baseline model found.
+
+============================================================
+PHASE 4 : MODEL OPTIMIZATION  (GridSearchCV)
+============================================================
+
+  Searching 648 combinations x 5-fold CV ...
+  (This may take a few minutes — n_jobs=-1 uses all CPU cores)
+Fitting 5 folds for each of 648 candidates, totalling 3240 fits
+
+  Best CV RMSE : 0.1897
+  Best params  : {'learning_rate': 0.1, 'max_depth': 4, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 500, 'subsample': 1.0}
+
+  Validation RMSE : 0.2083
+  Validation MAE  : 0.1684
+  Validation R2   : 0.4460
+
+  Test RMSE : 0.1845
+  Test MAE  : 0.1431
+  Test R2   : 0.5040
+
+  Optimized Model Summary
+  ───────────────────────────────────
+  learning_rate         : 0.1
+  max_depth             : 4
+  max_features          : sqrt
+  min_samples_leaf      : 10
+  n_estimators          : 500
+  subsample             : 1.0
+
+Phase 4 complete — optimized model ready.
+
+============================================================
+PHASE 5 : FINAL EVALUATION
+============================================================
+
+  REGRESSION METRICS
+  ──────────────────────────────
+  RMSE : 0.1845
+  MAE  : 0.1431
+  R2   : 0.5040
+
+  CLASSIFICATION METRICS  (threshold = 7.92)
+  ──────────────────────────────
+  Accuracy  : 0.8000
+  Precision : 0.7812
+  Recall    : 0.7576
+  F1-Score  : 0.7692
+
+  Generating evaluation plots ...
+  [saved -> plots/phase5_evaluation.png]
+
+  Sample Predictions (first 10):
+ Actual  Predicted  Error
+    8.0       8.07 -0.071
+    7.7       7.73 -0.033
+    8.1       8.01  0.089
+    8.1       8.16 -0.062
+    7.7       7.76 -0.064
+    7.8       7.74  0.064
+    7.6       7.94 -0.338
+    7.9       8.02 -0.117
+    8.0       7.97  0.032
+    7.8       7.81 -0.007
+
+  Large errors (|error| > 1.0) : 0 / 150 samples
+
+Phase 5 complete — evaluation done.
+
+============================================================
+  PIPELINE COMPLETE
+============================================================
+
+  Plots saved:
+    plots/phase1_correlation_heatmap.png
+    plots/phase1_rating_distribution.png
+    plots/phase3_actual_vs_predicted.png
+    plots/phase3_training_progress.png
+    plots/phase5_evaluation.png
