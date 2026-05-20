@@ -21,7 +21,7 @@ IMDB-Movie-Rating-Predictions-Group-10/
 │   └── IMDB_Movie_Rating_Prediction_Pipeline.ipynb
 
 ## How to run
-Open the notebooks [IMDB_Movie_Rating_Prediction_Pipeline.ipynb].  Click "Google Colab" button. The link direct to Google Colab.
+Open the notebooks [IMDB_Movie_Rating_Prediction_Pipeline.ipynb].  Click "Open in Colab" button. The link direct to Google Colab.
 When Colab already open, click "Run All". All the output will show.
 
 ## Dataset
