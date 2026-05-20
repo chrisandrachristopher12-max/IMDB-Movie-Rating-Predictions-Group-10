@@ -21,7 +21,8 @@ IMDB-Movie-Rating-Predictions-Group-10/
 │   └── IMDB_Movie_Rating_Prediction_Pipeline.ipynb
 
 ## How to run
-Open the notebooks [IMDB_Movie_Rating_Prediction_Pipeline.ipynb].  Click "Google Colab" button. The link direct to Google Colab. When Colab already open, click "Run All". All the output will show.
+Open the notebooks [IMDB_Movie_Rating_Prediction_Pipeline.ipynb].  Click "Google Colab" button. The link direct to Google Colab.
+When Colab already open, click "Run All". All the output will show.
 
 ## Dataset
 - **Source:** [IMDB Top 1000 Movies – Kaggle](https://www.kaggle.com/datasets/thedevastator/imdb-movie-ratings-dataset)
