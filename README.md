@@ -20,7 +20,8 @@ IMDB-Movie-Rating-Predictions-Group-10/
 │   ├── Coding_Milestones_5_MLDS.py
 │   └── IMDB_Movie_Rating_Prediction_Pipeline.ipynb
 
-
+## How to run
+Open the notebooks [IMDB_Movie_Rating_Prediction_Pipeline.ipynb].  Click "Google Colab" button. The link direct to Google Colab. When Colab already open, click "Run All". All the output will show.
 
 ## Dataset
 - **Source:** [IMDB Top 1000 Movies – Kaggle](https://www.kaggle.com/datasets/thedevastator/imdb-movie-ratings-dataset)
@@ -35,9 +36,7 @@ IMDB-Movie-Rating-Predictions-Group-10/
 | M3 | Training Loop | [3](https://youtu.be/nr_Gt__fmdY)|
 | M4 | Model Optimization | [4](https://youtu.be/f8io57OuWWw?si=Ti8FtYU5JyUYlx_c) |
 | M5 | Final Evaluation | [5](https://youtu.be/7jstQpHVtwA) |
-
-## How to run
-Open the notebooks [IMDB_Movie_Rating_Prediction_Pipeline.ipynb][]ttps://raw.githubusercontent.com/chrisandrachristopher12-max/IMDB-Movie-Rating-Predictions-Group-10/refs/heads/main/IMDB_Movie_Rating_Prediction%20Pipeline.ipynb) . There is link direct to Google Colab. Click the button. Each notebook is self-contained for its milestone.
+.
 
 ## 👥 Group members
 | Name | GitHub username | Milestone |
