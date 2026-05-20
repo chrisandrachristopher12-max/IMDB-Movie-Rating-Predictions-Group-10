@@ -10,16 +10,17 @@ IMDB-Movie-Rating-Predictions-Group-10/
 ├── README.md
 ├── requirements.txt
 ├── data/
-│   └── README.md          ← dataset download link here
+    └──IMDB_Movie_Dataset.csv
+    └──IMDB_Movie_Uncleaned_Dataset.csv        
 ├── notebooks/
-│   ├── 01_Data_Pipeline.ipynb
-│   ├── 02_Architecture_Logic.ipynb
-│   ├── 03_Training_Loop.ipynb
-│   ├── 04_Model_Optimization.ipynb
-│   └── 05_Final_Evaluation.ipynb
-└── models/
-    └── .gitkeep
-```
+│   ├── Coding_Milestones_1_MLDS.ipynb
+│   ├── Coding_Milestones_2_MLDS.ipynb
+│   ├── Coding_Milestones_3_MLDS.ipynb
+│   ├── Coding_Milestones_4_MLDS.py
+│   ├── Coding_Milestones_5_MLDS.py
+│   └── IMDB_Movie_Rating_Prediction_Pipeline.ipynb
+
+
 
 ## Dataset
 - **Source:** [IMDB Top 1000 Movies – Kaggle](https://www.kaggle.com/datasets/thedevastator/imdb-movie-ratings-dataset)
