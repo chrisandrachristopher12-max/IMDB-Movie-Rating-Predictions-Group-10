@@ -37,11 +37,7 @@ IMDB-Movie-Rating-Predictions-Group-10/
 | M5 | Final Evaluation | [5](https://youtu.be/7jstQpHVtwA) |
 
 ## How to run
-```bash
-pip install -r requirements.txt
-jupyter notebook
-```
-Open the notebooks in order (01 → 05). Each notebook is self-contained for its milestone.
+Open the notebooks IMDB_Movie_Rating_Prediction_Pipeline.ipynb. There is link direct to Google Colab. Click the button. Each notebook is self-contained for its milestone.
 
 ## 👥 Group members
 | Name | GitHub username | Milestone |
