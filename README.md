@@ -2,7 +2,7 @@
 ![KD34403](https://img.shields.io/badge/KD34403-Machine%20Learning-blue) ![UMS](https://img.shields.io/badge/Universiti%20Malaysia%20Sabah-Group%2010-green)
 
 ## 📌 Project overview
-This project builds a machine learning pipeline to predict IMDB movie ratings based on structured movie metadata such as genre, runtime, number of votes, release year, and gross revenue. The goal is to train a regression model that accurately estimates a movie's rating on a 1–10 scale.
+This project develops a machine learning model to predict IMDb movie ratings using movie features such as genre, runtime, release year, number of votes, and gross revenue. The data is preprocessed using scaling and one-hot encoding, and a Gradient Boosting Regressor is trained to estimate ratings on a scale of 1 to 10. The goal is to build an accurate model that can predict ratings for new movies based on their metadata.
 
 ## 📂 Repository structure
 ```
