@@ -22,7 +22,7 @@ IMDB-Movie-Rating-Predictions-Group-10/
 ```
 
 ## How to run
-Open the notebooks [IMDB_Movie_Rating_Prediction_Pipeline.ipynb](https://raw.githubusercontent.com/chrisandrachristopher12-max/IMDB-Movie-Rating-Predictions-Group-10/refs/heads/main/IMDB_Movie_Rating_Prediction%20Pipeline.ipynb).  Click "Open in Colab" button. The link direct to Google Colab.
+Open the notebooks [IMDB_Movie_Rating_Prediction_Pipeline.ipynb].  Click "Open in Colab" button. The link direct to Google Colab.
 When Colab already open, click "Run All". All the output will show.
 
 ## Dataset
@@ -39,7 +39,6 @@ When Colab already open, click "Run All". All the output will show.
 | M4 | Model Optimization | [Milestone 4](https://youtu.be/f8io57OuWWw?si=Ti8FtYU5JyUYlx_c) |
 | M5 | Final Evaluation | [Milestone 5](https://youtu.be/7jstQpHVtwA) |
 
-''' 
 ## Group members
 | Name | GitHub username | Milestone |
 |------|----------------|-----------|
