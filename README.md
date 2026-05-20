@@ -19,6 +19,7 @@ IMDB-Movie-Rating-Predictions-Group-10/
 │   ├── Coding_Milestones_4_MLDS.py
 │   ├── Coding_Milestones_5_MLDS.py
 │   └── IMDB_Movie_Rating_Prediction_Pipeline.ipynb
+```
 
 ## How to run
 Open the notebooks [IMDB_Movie_Rating_Prediction_Pipeline.ipynb].  Click "Open in Colab" button. The link direct to Google Colab.
@@ -32,14 +33,14 @@ When Colab already open, click "Run All". All the output will show.
 ## Milestone videos
 | Milestone | Topic | YouTube Link |
 |-----------|-------|--------------|
-| M1 | Data Pipeline | [1](https://youtu.be/NVMA_dkZF3Q) |
-| M2 | Architecture Logic | [2](https://youtu.be/RrCvqTxPDC8) |
-| M3 | Training Loop | [3](https://youtu.be/nr_Gt__fmdY)|
-| M4 | Model Optimization | [4](https://youtu.be/f8io57OuWWw?si=Ti8FtYU5JyUYlx_c) |
-| M5 | Final Evaluation | [5](https://youtu.be/7jstQpHVtwA) |
-.
+| M1 | Data Pipeline | [Milestone 1](https://youtu.be/NVMA_dkZF3Q) |
+| M2 | Architecture Logic | [Milestone 2](https://youtu.be/RrCvqTxPDC8) |
+| M3 | Training Loop | [Milestone 3](https://youtu.be/nr_Gt__fmdY)|
+| M4 | Model Optimization | [Milestone 4](https://youtu.be/f8io57OuWWw?si=Ti8FtYU5JyUYlx_c) |
+| M5 | Final Evaluation | [Milestone 5](https://youtu.be/7jstQpHVtwA) |
 
-## 👥 Group members
+''' 
+## Group members
 | Name | GitHub username | Milestone |
 |------|----------------|-----------|
 | FARHANI SYAMSUDDIN BI23110050 | farhanisyamsuddin12 | M1 – Data Pipeline |
@@ -47,3 +48,5 @@ When Colab already open, click "Run All". All the output will show.
 | CHRISANDRA BUSAK CHRISTOPHER BI23110160 | chrisandrachirstopher12-max | M3 – Training Loop |
 | NORAIN AQILAH BINTI SHAMSUDDIN BI22110478 | aiinaqilah | M4 – Model Optimization |
 | NABILA GOTIMUS BI23110288 | assyahidNabila | M5 – Final Evaluation |
+
+
