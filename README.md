@@ -37,7 +37,7 @@ IMDB-Movie-Rating-Predictions-Group-10/
 | M5 | Final Evaluation | [5](https://youtu.be/7jstQpHVtwA) |
 
 ## How to run
-Open the notebooks IMDB_Movie_Rating_Prediction_Pipeline.ipynb. There is link direct to Google Colab. Click the button. Each notebook is self-contained for its milestone.
+Open the notebooks [IMDB_Movie_Rating_Prediction_Pipeline.ipynb][]ttps://raw.githubusercontent.com/chrisandrachristopher12-max/IMDB-Movie-Rating-Predictions-Group-10/refs/heads/main/IMDB_Movie_Rating_Prediction%20Pipeline.ipynb) . There is link direct to Google Colab. Click the button. Each notebook is self-contained for its milestone.
 
 ## 👥 Group members
 | Name | GitHub username | Milestone |
